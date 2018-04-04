@@ -52,7 +52,7 @@ class GregTechTranslator(Translator):
 
     def translate_all(self):
         for k, v in self.original.items():
-            if k in self.excptions:
+            if k in self.excptions.keys():
                 translate_result = self.excptions[k]
             else:
                 translate_result = self.translate(k, v)

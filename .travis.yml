@@ -10,7 +10,7 @@ before_deploy:
     - git config --local user.mail "wmjwld@live.cn"
 #    - git tag "格雷科技6汉化-Stable-Build-$(TRAVIS_TAG)"
 before_script:
-    - export PYTHONPATH=$PYTHONPATH:$g(source)
+    - export PYTHONPATH=$PYTHONPATH:source
 install:
     - pip install pyyaml
 deploy:
